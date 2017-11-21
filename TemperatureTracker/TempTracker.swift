@@ -32,7 +32,7 @@ class TempTracker {
     
     private var temperatures = [Int]()
     
-    public enum TempTrackerError: Int, CustomNSError, LocalizedError {
+    enum TempTrackerError: Int, CustomNSError, LocalizedError {
         case NoTemperatures = 0
         case NoMode
         
@@ -68,7 +68,7 @@ class TempTracker {
             case .NoTemperatures:
                 return NSLocalizedString("Add some temperatures to the temperature array via the insert method", comment: "TempTrackerError Recovery Suggestion")
             case .NoMode:
-                return NSLocalizedString("Add some temperatures that may be the same as those previously added", comment: "TempTrackerError Recovery Suggestion")
+                return NSLocalizedString("Add some temperatures that are the same as one of the previously added temperatures", comment: "TempTrackerError Recovery Suggestion")
             }
         }
         
@@ -123,11 +123,8 @@ class TempTracker {
             throw TempTrackerError.NoTemperatures
         }
         var countDict = [Int: Int]()
-        for temperature in temperatures {
-            if countDict[temperature] == nil {
-                countDict[temperature] = 0
-            }
-            countDict[temperature]! += 1
+        temperatures.forEach {
+            countDict[$0] = (countDict[$0] ?? 0) + 1
         }
         if countDict.count == 0 {
             throw TempTrackerError.NoMode
