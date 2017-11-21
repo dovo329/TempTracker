@@ -8,11 +8,6 @@
 
 import Foundation
 
-//: Playground - noun: a place where people can play
-
-import Foundation
-import UIKit
-
 //var str = "Hello, playground"
 //You decide to test if your oddly-mathematical heating company is fulfilling its All-Time Max, Min, Mean and Mode Temperature Guarantee™.
 //Write a class TempTracker with these methods:
@@ -123,66 +118,19 @@ class TempTracker {
             throw TempTrackerError.NoTemperatures
         }
         var countDict = [Int: Int]()
-        temperatures.forEach {
-            countDict[$0] = (countDict[$0] ?? 0) + 1
+        var maxValue = Int.min
+        var modeFound = false
+        findMode: for temperature in temperatures {
+            countDict[temperature] = (countDict[temperature] ?? 0) + 1
+            maxValue = max(temperature, maxValue)
+            if countDict[temperature]! > 1 {
+                modeFound = true
+                break findMode
+            }
         }
-        if countDict.count == 0 {
+        if countDict.count == 0 || !modeFound {
             throw TempTrackerError.NoMode
         }
-        
-        // func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, (key: Key, value: Value)) throws -> Result) rethrows -> Result
-        
-        if let (value, _) = countDict.max(by: { $0.1 < $1.1 }) {
-            return value
-        }
-        
-        throw TempTrackerError.NoMode
+        return maxValue
     }
 }
-
-//class TempTracker {
-//
-//    var temperatures = [Double]()
-//
-//    func insert(temperature: Double) -> Void {
-//        temperatures.append(temperature)
-//    }
-//
-//    func getMax() -> Double {
-//        if let max = temperatures.max() {
-//            return max
-//        } else {
-//            return 0.0
-//        }
-//    }
-//
-//    func getMin() -> Double {
-//        if let min = temperatures.min() {
-//            return min
-//        } else {
-//            return 0.0
-//        }
-//    }
-//
-//    func getMean() -> Double {
-//        return temperatures.reduce(0.0, { (accum, nextTemperature) -> Double in
-//            return accum + nextTemperature
-//        }) / Double(temperatures.count)
-//    }
-//
-//    func getMode() -> Double {
-//        if temperatures.count == 0 {
-//            return 0.0
-//        }
-//        let sortedTemperatures = temperatures.sorted()
-//        return sortedTemperatures[temperatures.count/2]
-//    }
-//}
-//
-//var tempTracker = TempTracker()
-//tempTracker.temperatures = [1.0, 2.0, 3.0, 2.5, 1.5, 4.0]
-//
-//print("max: \(tempTracker.getMax())")
-//print("min: \(tempTracker.getMin())")
-//print("mean: \(tempTracker.getMean())")
-//print("mode: \(tempTracker.getMode())")
