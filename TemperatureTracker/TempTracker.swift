@@ -45,6 +45,33 @@ class TempTracker {
             }
         }
         
+        var failureReason: String {
+            switch self {
+            case .NoTemperatures:
+                return NSLocalizedString("No temperatures are present in the current temperature array", comment: "TempTrackerError Failure Reason")
+            case .NoMode:
+                return NSLocalizedString("No repeating temperature value found in current temperatures array", comment: "TempTrackerError Failure Reason")
+            }
+        }
+
+        var helpAnchor: String {
+            switch self {
+            case .NoTemperatures:
+                return NSLocalizedString("No temperatures are present in the current temperature array", comment: "TempTrackerError Help Anchor")
+            case .NoMode:
+                return NSLocalizedString("No repeating temperature value found in current temperatures array", comment: "TempTrackerError Help Anchor")
+            }
+        }
+        
+        var recoverySuggestion: String {
+            switch self {
+            case .NoTemperatures:
+                return NSLocalizedString("Add some temperatures to the temperature array via the insert method", comment: "TempTrackerError Recovery Suggestion")
+            case .NoMode:
+                return NSLocalizedString("Add some temperatures that may be the same as those previously added", comment: "TempTrackerError Recovery Suggestion")
+            }
+        }
+        
         var errorDomain: String {
             return String(describing: TempTrackerError.self)
         }
