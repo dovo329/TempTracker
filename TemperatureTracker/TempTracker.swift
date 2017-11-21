@@ -132,28 +132,14 @@ class TempTracker {
         
         // func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, (key: Key, value: Value)) throws -> Result) rethrows -> Result
         
-        var maxKey : Int?
-        let maxValue = countDict.reduce(0, { (accum: Int, nextTuple: (key: Int, value: Int)) -> Int in
-            if (nextTuple.value > accum) {
-                maxKey = nextTuple.key
-            }
-            return max(accum, nextTuple.value)
-        })
-        
-        if let maxKey = maxKey {
-            if let maxCount = countDict[maxKey] {
-                if (maxCount > 1) {
-                    return maxKey
-                } else {
-                    throw TempTrackerError.NoMode
-                }
-            } else {
-                throw TempTrackerError.NoMode
-            }
-            
-        } else {
-            throw TempTrackerError.NoMode
+        if let (value, _) = countDict.max(by: { (a: (key: Int, value: Int), b: (key: Int, value: Int)) -> Bool in
+            // are in increasing order
+            return a.value < b.value
+        }) {
+            return value
         }
+        
+        throw TempTrackerError.NoMode
     }
 }
 

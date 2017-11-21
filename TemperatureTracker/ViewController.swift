@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let tempTracker = TempTracker(temperatures: [5, 4, 2, 1, 4, 3])
-        tempTracker.insert(temperature: 8)
+        let tempTracker = TempTracker(temperatures: [5, 4, 2, 1, 5, 3])
+        tempTracker.insert(temperature: 100)
         
         do {
             let max = try tempTracker.getMax()
