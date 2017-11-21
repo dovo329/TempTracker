@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A59A026C1FC4B5CF00F88E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A026B1FC4B5CF00F88E26 /* AppDelegate.swift */; };
+		A59A026E1FC4B5CF00F88E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A026D1FC4B5CF00F88E26 /* ViewController.swift */; };
+		A59A02711FC4B5CF00F88E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59A026F1FC4B5CF00F88E26 /* Main.storyboard */; };
+		A59A02731FC4B5CF00F88E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59A02721FC4B5CF00F88E26 /* Assets.xcassets */; };
+		A59A02761FC4B5CF00F88E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59A02741FC4B5CF00F88E26 /* LaunchScreen.storyboard */; };
+		A59A02811FC4B5CF00F88E26 /* TemperatureTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A02801FC4B5CF00F88E26 /* TemperatureTrackerTests.swift */; };
+		A59A028C1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A028B1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift */; };
+		A59A029A1FC4B5EC00F88E26 /* TempTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A02991FC4B5EC00F88E26 /* TempTracker.swift */; };
+		A59A029B1FC4B5EC00F88E26 /* TempTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A02991FC4B5EC00F88E26 /* TempTracker.swift */; };
+		A59A029C1FC4B5EC00F88E26 /* TempTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A02991FC4B5EC00F88E26 /* TempTracker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A59A027D1FC4B5CF00F88E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A59A02601FC4B5CF00F88E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59A02671FC4B5CF00F88E26;
+			remoteInfo = TemperatureTracker;
+		};
+		A59A02881FC4B5CF00F88E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A59A02601FC4B5CF00F88E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59A02671FC4B5CF00F88E26;
+			remoteInfo = TemperatureTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A59A02681FC4B5CF00F88E26 /* TemperatureTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59A026B1FC4B5CF00F88E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A59A026D1FC4B5CF00F88E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A59A02701FC4B5CF00F88E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A59A02721FC4B5CF00F88E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A59A02751FC4B5CF00F88E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A59A02771FC4B5CF00F88E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59A027C1FC4B5CF00F88E26 /* TemperatureTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperatureTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59A02801FC4B5CF00F88E26 /* TemperatureTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTrackerTests.swift; sourceTree = "<group>"; };
+		A59A02821FC4B5CF00F88E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59A02871FC4B5CF00F88E26 /* TemperatureTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperatureTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59A028B1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTrackerUITests.swift; sourceTree = "<group>"; };
+		A59A028D1FC4B5CF00F88E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59A02991FC4B5EC00F88E26 /* TempTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempTracker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A59A02651FC4B5CF00F88E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A02791FC4B5CF00F88E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A02841FC4B5CF00F88E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A59A025F1FC4B5CF00F88E26 = {
+			isa = PBXGroup;
+			children = (
+				A59A026A1FC4B5CF00F88E26 /* TemperatureTracker */,
+				A59A027F1FC4B5CF00F88E26 /* TemperatureTrackerTests */,
+				A59A028A1FC4B5CF00F88E26 /* TemperatureTrackerUITests */,
+				A59A02691FC4B5CF00F88E26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A59A02691FC4B5CF00F88E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59A02681FC4B5CF00F88E26 /* TemperatureTracker.app */,
+				A59A027C1FC4B5CF00F88E26 /* TemperatureTrackerTests.xctest */,
+				A59A02871FC4B5CF00F88E26 /* TemperatureTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A59A026A1FC4B5CF00F88E26 /* TemperatureTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A59A026B1FC4B5CF00F88E26 /* AppDelegate.swift */,
+				A59A026D1FC4B5CF00F88E26 /* ViewController.swift */,
+				A59A02991FC4B5EC00F88E26 /* TempTracker.swift */,
+				A59A026F1FC4B5CF00F88E26 /* Main.storyboard */,
+				A59A02721FC4B5CF00F88E26 /* Assets.xcassets */,
+				A59A02741FC4B5CF00F88E26 /* LaunchScreen.storyboard */,
+				A59A02771FC4B5CF00F88E26 /* Info.plist */,
+			);
+			path = TemperatureTracker;
+			sourceTree = "<group>";
+		};
+		A59A027F1FC4B5CF00F88E26 /* TemperatureTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A59A02801FC4B5CF00F88E26 /* TemperatureTrackerTests.swift */,
+				A59A02821FC4B5CF00F88E26 /* Info.plist */,
+			);
+			path = TemperatureTrackerTests;
+			sourceTree = "<group>";
+		};
+		A59A028A1FC4B5CF00F88E26 /* TemperatureTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A59A028B1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift */,
+				A59A028D1FC4B5CF00F88E26 /* Info.plist */,
+			);
+			path = TemperatureTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A59A02671FC4B5CF00F88E26 /* TemperatureTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59A02901FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTracker" */;
+			buildPhases = (
+				A59A02641FC4B5CF00F88E26 /* Sources */,
+				A59A02651FC4B5CF00F88E26 /* Frameworks */,
+				A59A02661FC4B5CF00F88E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TemperatureTracker;
+			productName = TemperatureTracker;
+			productReference = A59A02681FC4B5CF00F88E26 /* TemperatureTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A59A027B1FC4B5CF00F88E26 /* TemperatureTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59A02931FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTrackerTests" */;
+			buildPhases = (
+				A59A02781FC4B5CF00F88E26 /* Sources */,
+				A59A02791FC4B5CF00F88E26 /* Frameworks */,
+				A59A027A1FC4B5CF00F88E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59A027E1FC4B5CF00F88E26 /* PBXTargetDependency */,
+			);
+			name = TemperatureTrackerTests;
+			productName = TemperatureTrackerTests;
+			productReference = A59A027C1FC4B5CF00F88E26 /* TemperatureTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A59A02861FC4B5CF00F88E26 /* TemperatureTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59A02961FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTrackerUITests" */;
+			buildPhases = (
+				A59A02831FC4B5CF00F88E26 /* Sources */,
+				A59A02841FC4B5CF00F88E26 /* Frameworks */,
+				A59A02851FC4B5CF00F88E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59A02891FC4B5CF00F88E26 /* PBXTargetDependency */,
+			);
+			name = TemperatureTrackerUITests;
+			productName = TemperatureTrackerUITests;
+			productReference = A59A02871FC4B5CF00F88E26 /* TemperatureTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A59A02601FC4B5CF00F88E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = VossWareLLC;
+				TargetAttributes = {
+					A59A02671FC4B5CF00F88E26 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					A59A027B1FC4B5CF00F88E26 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A59A02671FC4B5CF00F88E26;
+					};
+					A59A02861FC4B5CF00F88E26 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A59A02671FC4B5CF00F88E26;
+					};
+				};
+			};
+			buildConfigurationList = A59A02631FC4B5CF00F88E26 /* Build configuration list for PBXProject "TemperatureTracker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A59A025F1FC4B5CF00F88E26;
+			productRefGroup = A59A02691FC4B5CF00F88E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A59A02671FC4B5CF00F88E26 /* TemperatureTracker */,
+				A59A027B1FC4B5CF00F88E26 /* TemperatureTrackerTests */,
+				A59A02861FC4B5CF00F88E26 /* TemperatureTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A59A02661FC4B5CF00F88E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A02761FC4B5CF00F88E26 /* LaunchScreen.storyboard in Resources */,
+				A59A02731FC4B5CF00F88E26 /* Assets.xcassets in Resources */,
+				A59A02711FC4B5CF00F88E26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A027A1FC4B5CF00F88E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A02851FC4B5CF00F88E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A59A02641FC4B5CF00F88E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A026E1FC4B5CF00F88E26 /* ViewController.swift in Sources */,
+				A59A026C1FC4B5CF00F88E26 /* AppDelegate.swift in Sources */,
+				A59A029A1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A02781FC4B5CF00F88E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A02811FC4B5CF00F88E26 /* TemperatureTrackerTests.swift in Sources */,
+				A59A029B1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59A02831FC4B5CF00F88E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A028C1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift in Sources */,
+				A59A029C1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A59A027E1FC4B5CF00F88E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59A02671FC4B5CF00F88E26 /* TemperatureTracker */;
+			targetProxy = A59A027D1FC4B5CF00F88E26 /* PBXContainerItemProxy */;
+		};
+		A59A02891FC4B5CF00F88E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59A02671FC4B5CF00F88E26 /* TemperatureTracker */;
+			targetProxy = A59A02881FC4B5CF00F88E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A59A026F1FC4B5CF00F88E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A59A02701FC4B5CF00F88E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A59A02741FC4B5CF00F88E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A59A02751FC4B5CF00F88E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A59A028E1FC4B5CF00F88E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A59A028F1FC4B5CF00F88E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A59A02911FC4B5CF00F88E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A59A02921FC4B5CF00F88E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A59A02941FC4B5CF00F88E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemperatureTracker.app/TemperatureTracker";
+			};
+			name = Debug;
+		};
+		A59A02951FC4B5CF00F88E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemperatureTracker.app/TemperatureTracker";
+			};
+			name = Release;
+		};
+		A59A02971FC4B5CF00F88E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TemperatureTracker;
+			};
+			name = Debug;
+		};
+		A59A02981FC4B5CF00F88E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR64YVZD26;
+				INFOPLIST_FILE = TemperatureTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vosswarellc.ios.TemperatureTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TemperatureTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A59A02631FC4B5CF00F88E26 /* Build configuration list for PBXProject "TemperatureTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59A028E1FC4B5CF00F88E26 /* Debug */,
+				A59A028F1FC4B5CF00F88E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59A02901FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59A02911FC4B5CF00F88E26 /* Debug */,
+				A59A02921FC4B5CF00F88E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59A02931FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59A02941FC4B5CF00F88E26 /* Debug */,
+				A59A02951FC4B5CF00F88E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59A02961FC4B5CF00F88E26 /* Build configuration list for PBXNativeTarget "TemperatureTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59A02971FC4B5CF00F88E26 /* Debug */,
+				A59A02981FC4B5CF00F88E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A59A02601FC4B5CF00F88E26 /* Project object */;
+}
