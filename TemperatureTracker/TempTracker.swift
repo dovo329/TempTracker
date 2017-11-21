@@ -132,10 +132,7 @@ class TempTracker {
         
         // func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, (key: Key, value: Value)) throws -> Result) rethrows -> Result
         
-        if let (value, _) = countDict.max(by: { (a: (key: Int, value: Int), b: (key: Int, value: Int)) -> Bool in
-            // are in increasing order
-            return a.value < b.value
-        }) {
+        if let (value, _) = countDict.max(by: { $0.1 < $1.1 }) {
             return value
         }
         
