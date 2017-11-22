@@ -20,20 +20,32 @@ import Foundation
 
 class TwoSum {
     class func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        //let sortedArr = nums.sorted(by: < )
         let resultNoneFound = [0, 0]
         
-        nextStartTerm: for startIndex in 0..<nums.count-1 {
-            for secondIndex in startIndex+1..<nums.count {
-                let leftTerm = nums[startIndex]
-                let rightTerm = nums[secondIndex]
-                let sum = leftTerm + rightTerm
-                if (sum == target) {
-                    return [startIndex, secondIndex]
+        var numIndexDict = [Int: Int]()
+        
+        for i in 0..<nums.count {
+            let complement = target - nums[i]
+            if let complementIndex = numIndexDict[complement] {
+                if (complementIndex != i) {
+                    return [complementIndex, i]
                 }
             }
+            numIndexDict[nums[i]] = i
         }
         
         return resultNoneFound
+        
+        // brute force way
+//        nextStartTerm: for startIndex in 0..<nums.count-1 {
+//            for secondIndex in startIndex+1..<nums.count {
+//                let leftTerm = nums[startIndex]
+//                let rightTerm = nums[secondIndex]
+//                let sum = leftTerm + rightTerm
+//                if (sum == target) {
+//                    return [startIndex, secondIndex]
+//                }
+//            }
+//        }
     }
 }
