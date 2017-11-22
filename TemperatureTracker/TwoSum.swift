@@ -20,22 +20,16 @@ import Foundation
 
 class TwoSum {
     class func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        let sortedArr = nums.sorted(by: < )
+        //let sortedArr = nums.sorted(by: < )
         let resultNoneFound = [0, 0]
         
-        nextStartTerm: for startTerm in 0..<sortedArr.count-1 {
-            for i in startTerm+1..<sortedArr.count {
-                let leftTerm = sortedArr[startTerm]
-                let rightTerm = sortedArr[i]
+        nextStartTerm: for startIndex in 0..<nums.count-1 {
+            for secondIndex in startIndex+1..<nums.count {
+                let leftTerm = nums[startIndex]
+                let rightTerm = nums[secondIndex]
                 let sum = leftTerm + rightTerm
-                if (sum > target) {
-                    break nextStartTerm
-                } else if (sum == target) {
-                    guard let leftIndex = nums.index(of: leftTerm),
-                        let rightIndex = nums.index(of: rightTerm) else {
-                            return resultNoneFound
-                    }
-                    return [leftIndex, rightIndex].sorted(by: < )
+                if (sum == target) {
+                    return [startIndex, secondIndex]
                 }
             }
         }

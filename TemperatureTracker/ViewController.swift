@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //testTempTracker()
-        let twoSumResult = TwoSum.twoSum([11, 7, 15, 2], 18)
+        //let twoSumResult = TwoSum.twoSum([11, 7, 15, 2], 18)
+        let twoSumResult = TwoSum.twoSum([3, 2, 4], 6)
+        //let twoSumResult = TwoSum.twoSum([3, 3], 6)
         print("twoSumResult: \(twoSumResult)")
     }
     
