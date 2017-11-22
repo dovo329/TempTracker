@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //testTempTracker()
+        let twoSumResult = TwoSum.twoSum([11, 7, 15, 2], 18)
+        print("twoSumResult: \(twoSumResult)")
+    }
+    
+    func testTempTracker() {
+        
         let tempTracker = TempTracker(temperatures: [5, 4, 2, 1, 5, 3])
         tempTracker.insert(temperature: 100)
         
