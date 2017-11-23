@@ -15,6 +15,33 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //testTempTracker()
+        //testTwoSumResult()
+        testAddTwoNumbers()
+    }
+    
+    func testAddTwoNumbers() {
+//        let listNode1 = AddTwoNumbers.convertIntToListNode(4)
+//        let listNode2 = AddTwoNumbers.convertIntToListNode(5)
+        
+        let addTwoNumbers = AddTwoNumbers()
+//        let listNode1 = addTwoNumbers.convertIntToListNode(243)
+//        let listNode2 = addTwoNumbers.convertIntToListNode(564)
+        
+//        let listNode1 = addTwoNumbers.convertIntToListNode(5)
+//        let listNode2 = addTwoNumbers.convertIntToListNode(5)
+        
+        let listNode1 = addTwoNumbers.convertIntToListNode(1)
+        let listNode2 = addTwoNumbers.convertIntToListNode(99)
+        
+        if let resultListNode = addTwoNumbers.addTwoNumbers(listNode1, listNode2) {
+            print("success")
+        } else {
+            print("failed")
+        }
+        
+    }
+    
+    func testTwoSumResult() {
         //let twoSumResult = TwoSum.twoSum([11, 7, 15, 2], 18)
         //let twoSumResult = TwoSum.twoSum([3, 2, 4], 6)
         let twoSumResult = TwoSum.twoSum([3, 3], 6)
