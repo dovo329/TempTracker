@@ -71,38 +71,30 @@ class AddTwoNumbers {
     
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         
-        guard let l1 = l1, let l2 = l2 else {
-            return nil
-        }
-        
         var carry = 0
         var mutNode1: ListNode? = l1
         var mutNode2: ListNode? = l2
-        var mutResultNode: ListNode?
-        var prevResultNode: ListNode?
-        var startResultNode: ListNode?
-        while mutNode1 != nil || mutNode2 != nil || carry > 0 {
+        let dummyHead: ListNode = ListNode(0)
+        var mutResultNode = dummyHead
+
+        while mutNode1 != nil || mutNode2 != nil {
             
             let val1 = mutNode1?.val ?? 0
             let val2 = mutNode2?.val ?? 0
             
-            let sum = val1 + val2
+            let sum = val1 + val2 + carry
+            carry = sum / 10
             
-            if mutResultNode == nil {
-                mutResultNode = ListNode(0)
-                startResultNode = mutResultNode
-            }
-            mutResultNode?.val = (sum + carry) % 10
-            mutResultNode?.next = ListNode(0)
-            
-            carry = (sum + carry) >= 10 ? 1 : 0
+            mutResultNode.next = ListNode(sum % 10)
+            mutResultNode = mutResultNode.next!
             
             mutNode1 = mutNode1?.next
             mutNode2 = mutNode2?.next
-            prevResultNode = mutResultNode
-            mutResultNode = mutResultNode?.next
         }
-        prevResultNode?.next = nil
-        return startResultNode
+        if (carry > 0) {
+            mutResultNode.next = ListNode(carry)
+        }
+
+        return dummyHead.next
     }
 }
