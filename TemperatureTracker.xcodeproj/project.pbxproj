@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A566E9C21FC61A470052D140 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566E9C11FC61A470052D140 /* AddTwoNumbers.swift */; };
+		A566E9C41FC66BDA0052D140 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566E9C31FC66BDA0052D140 /* LongestSubstring.swift */; };
+		A566E9C51FC66BDA0052D140 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566E9C31FC66BDA0052D140 /* LongestSubstring.swift */; };
+		A566E9C61FC66BDA0052D140 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566E9C31FC66BDA0052D140 /* LongestSubstring.swift */; };
 		A59A026C1FC4B5CF00F88E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A026B1FC4B5CF00F88E26 /* AppDelegate.swift */; };
 		A59A026E1FC4B5CF00F88E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A026D1FC4B5CF00F88E26 /* ViewController.swift */; };
 		A59A02711FC4B5CF00F88E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59A026F1FC4B5CF00F88E26 /* Main.storyboard */; };
@@ -42,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		A566E9C11FC61A470052D140 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
+		A566E9C31FC66BDA0052D140 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		A59A02681FC4B5CF00F88E26 /* TemperatureTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59A026B1FC4B5CF00F88E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A59A026D1FC4B5CF00F88E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				A59A02991FC4B5EC00F88E26 /* TempTracker.swift */,
 				A59A029D1FC5EE8C00F88E26 /* TwoSum.swift */,
 				A566E9C11FC61A470052D140 /* AddTwoNumbers.swift */,
+				A566E9C31FC66BDA0052D140 /* LongestSubstring.swift */,
 				A59A026F1FC4B5CF00F88E26 /* Main.storyboard */,
 				A59A02721FC4B5CF00F88E26 /* Assets.xcassets */,
 				A59A02741FC4B5CF00F88E26 /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			files = (
 				A566E9C21FC61A470052D140 /* AddTwoNumbers.swift in Sources */,
 				A59A026E1FC4B5CF00F88E26 /* ViewController.swift in Sources */,
+				A566E9C41FC66BDA0052D140 /* LongestSubstring.swift in Sources */,
 				A59A026C1FC4B5CF00F88E26 /* AppDelegate.swift in Sources */,
 				A59A029E1FC5EE8C00F88E26 /* TwoSum.swift in Sources */,
 				A59A029A1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
@@ -286,6 +292,7 @@
 			files = (
 				A59A02811FC4B5CF00F88E26 /* TemperatureTrackerTests.swift in Sources */,
 				A59A029B1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
+				A566E9C51FC66BDA0052D140 /* LongestSubstring.swift in Sources */,
 				A59A029F1FC5EE8C00F88E26 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 			files = (
 				A59A028C1FC4B5CF00F88E26 /* TemperatureTrackerUITests.swift in Sources */,
 				A59A029C1FC4B5EC00F88E26 /* TempTracker.swift in Sources */,
+				A566E9C61FC66BDA0052D140 /* LongestSubstring.swift in Sources */,
 				A59A02A01FC5EE8C00F88E26 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
