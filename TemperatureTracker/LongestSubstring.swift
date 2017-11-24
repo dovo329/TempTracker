@@ -20,27 +20,16 @@ import Foundation
 class LongestSubstring {
     func lengthOfLongestSubstring(_ s: String) -> Int {
         
-//        int n = s.length(), ans = 0;
-//        int[] index = new int[128]; // current index of character
-//        // try to extend the range [i, j]
-//        for (int j = 0, i = 0; j < n; j++) {
-//            i = Math.max(index[s.charAt(j)], i);
-//            ans = Math.max(ans, j - i + 1);
-//            index[s.charAt(j)] = j + 1;
-//        }
-//        return ans;
         let charArr = Array(s)
-        if charArr.count == 0 {
-            return 0
-        }
+//        if charArr.count == 0 {
+//            return 0
+//        }
         
         var maxLen = 0
         //var maxSubstr = ""
 
         var startIndex = 0
-        //var endIndex = 0
-        
-        //var curCharSet = Set<Character>()
+
         var charIndexDict = [Character: Int]()
 
         for testIndex in 0..<charArr.count {
