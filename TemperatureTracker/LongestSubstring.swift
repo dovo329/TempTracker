@@ -23,51 +23,33 @@ class LongestSubstring {
         let charArr = Array(s)
         
         var maxLen = 0
-        var curLen = 0
-        var maxSubstr = ""
-        var curSubstr = ""
-        
+        //var maxSubstr = ""
+
+        var startIndex = 0
         var endIndex = 0
         
-        //var testSubCharArr = [Character]()
+        var curCharSet = Set<Character>()
         
-        startIndexLoop: for startIndex in 0..<charArr.count {
-            if ((charArr.count - 1) - startIndex) < maxLen {
-                break startIndexLoop
+        while (endIndex < charArr.count) {
+            curCharSet.insert(charArr[endIndex])
+            
+            let curLen = endIndex - startIndex + 1
+            if (curLen > maxLen) {
+                //maxSubstr = String(charArr[startIndex...endIndex])
+                maxLen = curLen
+            }
+            
+            if (endIndex+1 < charArr.count && curCharSet.contains(charArr[endIndex+1])) {
+                curCharSet.remove(charArr[startIndex])
+                startIndex += 1
+            } else {
+                endIndex += 1
             }
             
             endIndex = max(startIndex, endIndex)
-
-            endIndexLoop: while endIndex<charArr.count {
-
-                curSubstr = String(charArr[startIndex...endIndex])
-                curLen = endIndex - startIndex + 1
-                
-                if (curLen > maxLen) {
-                    maxLen = curLen
-                    maxSubstr = curSubstr
-                }
-                
-                let testIndex = endIndex + 1
-                if (testIndex == charArr.count) {
-                    break startIndexLoop
-                }
-                let char = charArr[testIndex]
-                if (curSubstr.contains(char)) {
-                    continue startIndexLoop
-
-                } else {
-                    endIndex += 1
-                }
-            }
         }
         
-        if (curLen > maxLen) {
-            maxLen = curLen
-            maxSubstr = curSubstr
-        }
-        
-        print("maxSubstr: \(maxSubstr) of length \(maxLen)")
+        //print("maxSubstr: \(maxSubstr) of length \(maxLen)")
         return maxLen
     }
 }
