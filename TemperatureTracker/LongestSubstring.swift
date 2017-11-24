@@ -27,20 +27,21 @@ class LongestSubstring {
         var maxSubstr = ""
         var curSubstr = ""
         
-        var testSubCharArr = [Character]()
+        //var testSubCharArr = [Character]()
         
         startIndex: for startIndex in 0..<charArr.count {
-            curSubstr = String(charArr[startIndex])
-            curLen = 1
-            if (curLen > maxLen) {
-                maxLen = curLen
-                maxSubstr = curSubstr
+            if ((charArr.count - 1) - startIndex) < maxLen {
+                break startIndex
             }
             
+            curSubstr = String(charArr[startIndex])
+            curLen = 1
+            
             endIndex: for endIndex in (startIndex+1)..<charArr.count {
-                testSubCharArr = Array(charArr[startIndex..<endIndex])
+                //testSubCharArr = Array(charArr[startIndex..<endIndex])
+                
                 let char = charArr[endIndex]
-                if (testSubCharArr.contains(char)) {
+                if (curSubstr.contains(char)) {
                     continue startIndex
                     
                 } else {
@@ -55,7 +56,7 @@ class LongestSubstring {
                 }
             }
         }
-
+        
         if (curLen > maxLen) {
             maxLen = curLen
             maxSubstr = curSubstr
