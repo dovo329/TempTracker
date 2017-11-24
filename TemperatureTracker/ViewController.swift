@@ -25,25 +25,31 @@ class ViewController: UIViewController {
         let dut = LongestSubstring()
         var testStr = ""
         
-        testStr = "abcabcbb"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
-
-        testStr = "bbbbb"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
-
-        testStr = "pwwkew"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
-
-        testStr = "c"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
-
-        testStr = "aab"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//        testStr = "abcabcbb"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//
+//        testStr = "bbbbb"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//
+//        testStr = "pwwkew"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//
+//        testStr = "c"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//
+//        testStr = "aab"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//        
+//        testStr = "dvdf"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//        
+//        testStr = "anviaj"
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
+//        
+//        testStr = ""
+//        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
         
-        testStr = "dvdf"
-        print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
-        
-        testStr = "anviaj"
+        testStr = "abba"
         print("longest substring length of \(testStr) is \(dut.lengthOfLongestSubstring(testStr))")
     }
     
