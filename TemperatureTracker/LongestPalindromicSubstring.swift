@@ -11,47 +11,38 @@ import Foundation
 class LongestPalindromicSubstring {
     func longestPalindrome(_ s: String) -> String {
         let charArr = Array(s)
-        let reversedCharArr = Array(charArr.reversed())
         let N = charArr.count
+        var maxLen = 0
+        var maxPalindrome = ""
         
-        var matchCnt = 0
-        var matchStr = ""
-        var maxMatchCnt = 0
-        var maxMatchStr = ""
+        var testArr = Array<Character>()
         
-        for slideStartIndex in -N+1..<N {
-            matchCnt = 0
-            matchStr = ""
+        nextStartIndex: for startIndex in 0..<N {
+
+            testArr.removeAll()
+            //print("startIndex: \(startIndex)")
             
-            var prevCharWasMatch = false
-            for compareIndex in 0..<N {
+            for searchIndex in startIndex..<N {
+                //print("searchIndex: \(searchIndex)")
                 
-                let slideCompareIndex = -slideStartIndex + compareIndex
+                let testChar = charArr[searchIndex]
+                testArr.append(testChar)
+                    
+                // I must check for a palindrome each time
+                let reversedTestArr = Array<Character>(testArr.reversed())
                 
-                if slideCompareIndex >= 0 && slideCompareIndex < N {
-                    print("slideStartIndex: \(slideStartIndex) slideCompareIndex: \(slideCompareIndex) compareIndex: \(compareIndex) charArr[\(compareIndex)]: \(charArr[compareIndex]) reversedCharArr[\(slideCompareIndex)]=\(reversedCharArr[slideCompareIndex]) prevCharWasMatch: \(prevCharWasMatch) matchCnt: \(matchCnt) matchStr: \(matchStr)")
-                }
-                
-                if slideCompareIndex >= 0 && slideCompareIndex < N && charArr[compareIndex] == reversedCharArr[slideCompareIndex] {
-                    if prevCharWasMatch {
-                        matchCnt += 1
-                        matchStr += String(charArr[compareIndex])
-                    } else {
-                        matchCnt = 1
-                        matchStr = String(charArr[compareIndex])
+                if testArr == reversedTestArr {
+                    //print("\(testArr) is a palindrome")
+                    if testArr.count > maxLen {
+                        maxLen = testArr.count
+                        maxPalindrome = String(testArr)
                     }
-                    prevCharWasMatch = true
                 } else {
-                    prevCharWasMatch = false
-                }
-                
-                if matchCnt > maxMatchCnt {
-                    maxMatchCnt = matchCnt
-                    maxMatchStr = matchStr
+                    //print("\(testArr) may or may not be a palindrome, postponing judgement...")
                 }
             }
         }
         
-        return maxMatchStr
+        return maxPalindrome
     }
 }
