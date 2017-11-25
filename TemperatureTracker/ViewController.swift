@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         
         var num1, num2 : [Int]
             
-//        num1 = [1, 3, 8, 9, 22, 47, 48, 49, 89]
-//        num2 = [2, 4, 6, 8, 19, 29, 49]
+        num1 = [1, 3, 8, 9, 22, 47, 48, 49, 89]
+        num2 = [2, 4, 6, 8, 19, 29, 49]
         
 //        num1 = [1, 3]
 //        num2 = [2]
@@ -35,8 +35,8 @@ class ViewController: UIViewController {
 //        num1 = [1, 3]
 //        num2 = [2, 4]
         
-        num1 = []
-        num2 = [1]
+//        num1 = []
+//        num2 = [1]
         
         print("median of")
         dut.printArr(num1)
