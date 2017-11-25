@@ -18,7 +18,19 @@ class ViewController: UIViewController {
         //testTwoSumResult()
         //testAddTwoNumbers()
         //testLongestSubstring()
-        testFindMedianSortedArrays()
+        //testFindMedianSortedArrays()
+        testLongestPalindromicSubstring()
+    }
+    
+    func testLongestPalindromicSubstring() {
+        let dut = LongestPalindromicSubstring()
+        
+        //let str = "babad"
+        //let str = "cptobviouswasitaratisawxyzevacanistabbatsinacavemongodb"
+        //let str = "abcda"
+        let str = "abcdasdfghjkldcba"
+        
+        print("longest palindromic stubstring of \(str) is \(dut.longestPalindrome(str))")
     }
     
     func testFindMedianSortedArrays() {
