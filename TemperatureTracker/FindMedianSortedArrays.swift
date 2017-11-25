@@ -21,7 +21,7 @@ class FindMedianSortedArrays {
         if N % 2 == 1 { // odd case
             return Double(nums[medianIndex])
         } else { // even case
-            return Double(nums[medianIndex] + nums[medianIndex+1])/2
+            return Double(nums[medianIndex-1] + nums[medianIndex])/2
         }
         
     }
